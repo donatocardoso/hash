@@ -1,0 +1,231 @@
+/* 
+    Created on : 15/08/2017, 14:03:46
+    Author     : Donato
+*/
+@media only screen and (max-width : 1199px)
+{
+    section#sectionGame h2{
+        font-size: 130%;
+    }
+}
+
+@media only screen and (max-width : 999px)
+{
+    section#sectionGame h2{
+        font-size: 100%;
+    }
+}
+
+@media only screen and (min-width : 780px)
+{
+    /*************************sectionGame*********************/
+    section#sectionGame article#game{
+        margin: 5% auto;
+    }
+
+    section#sectionGame article#left, article#right{
+        width: 15%;
+        border: 1px solid green;
+    }
+
+    section#sectionGame article#left{
+        border-right: 2px solid green;
+    }
+
+    section#sectionGame article#right{
+        border-left: 2px solid green;
+    }
+
+    section#sectionGame article#left img#img1, article#right img#img2{
+        margin-top: 25%;
+        width: 78px;
+        height: 78px;
+    }
+
+    section#sectionGame article#left p#placar1, article#right p#placar2{
+        margin-top: 25%;
+    }
+
+    section#sectionGame article#left p#vez1, article#right p#vez2{
+        margin-top: 10%;
+    }
+
+    body img#velhaImg {
+        left: 46.5%;
+        top: 35%;
+    }
+}
+
+@media only screen and (max-width : 779px)
+{
+    section#sectionGame article#left, article#right{
+        width: 49%;
+        height: 220px;
+        margin-bottom: 2%;
+        border-bottom: 2px solid green;
+    }
+
+    section#sectionGame article#left{
+        border-right: 2px solid green;
+    }
+
+    section#sectionGame article#right{
+        border-left: 2px solid green;
+    }
+
+    section#sectionGame article#left p#placar1, article#right p#placar2{
+        margin-bottom: -12%;
+    }
+
+    body img#velhaImg {
+        left: 45%;
+        top: 55%;
+    }
+}
+
+@media only screen and (max-width : 585px)
+{
+    section#sectionGame article#left p#vez1, section#sectionGame article#right p#vez2{
+        float: bottom;
+    }
+
+    body img#velhaImg {
+        left: 43%;
+        top: 60%;
+    }
+}
+
+@media only screen and (min-width : 381px)
+{
+    section#sectionGame article#game table#velha tr td, section#sectionGame img{
+        width: 74px;
+        height: 75px;
+    }
+}
+
+@media only screen and (max-width : 380px)
+{
+    section#sectionGame article#left, article#right{
+        width: 48.5%;
+        height: 180px;
+    }
+    
+    section#sectionIndex h3{
+        font-size: 100%;
+    }
+    
+    section#sectionGame h2, p#vez1, p#vez2{
+        font-size: 80%;
+    }
+
+    section#sectionGame article#game table#velha tr td, section#sectionGame img{
+        width: 54px;
+        height: 55px;
+    }
+
+    body img#velhaImg {
+        left: 40%;
+        top: 63%;
+    }
+}
+
+/******************************************************************************************/
+
+body{
+    margin: 2%;
+    height: auto;
+}
+
+/**************************************sectionIndex****************************************/
+section#sectionIndex, section#sectionGame{
+    width: 80%;
+    height: auto;
+    border: 2px solid green;
+    margin: 7% 10%;
+    display: block;
+    text-align: center;
+    font-family: 'Segoe UI';
+}
+
+section#sectionIndex img#iconeBola, img#iconeXis{
+    margin: 1.5%;
+}
+
+section#sectionIndex img#iconeBola:hover, img#iconeXis:hover{
+    cursor: pointer;
+}
+
+section#sectionIndex img.cheked{
+    border: 3px solid lightseagreen;
+    width: 70px;
+    height: 71px;
+}
+
+section#sectionIndex p{
+    color: #ffffff;
+    margin: -1% auto;
+}
+
+button{
+    margin: 2% auto;
+    background: dodgerblue;
+    padding: 5px;
+    border: none;
+    color: white;
+}
+
+button:hover{
+    background: #cc0000;
+    cursor: pointer;
+}
+
+/**************************************sectionGame****************************************/
+section#sectionGame article#left{
+    float: left;
+    position: relative;
+}
+
+section#sectionGame article#right{
+    float: right;
+    position: relative;
+}
+
+section#sectionGame article#left p#vez1, article#right p#vez2{
+    font-weight: bold;
+    color: green;
+}
+
+section#sectionGame article#game {
+    position: relative;
+    display: block;
+}
+
+section#sectionGame article#game table#velha{
+    margin: auto;
+}
+
+section#sectionGame article#game table#velha tr td{
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+section#game button{
+    margin: 2%;
+}
+
+body img#velhaImg {
+    position: absolute;
+    display: none;
+    z-index: 1;
+}
+
+body img.zoom {
+    animation-name: example;
+    animation-duration: 2s;
+}
+
+@keyframes example {
+    0%   {transform: scale(0,0);}
+    100%  {transform: scale(2,2);}
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>JOGO DA VELHA</title>
+        
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/cssMain.css">
+        
+        <script language="javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script language="javascript" src="js/jsMain.js"></script>
+    </head>
+    <body>
+        <section id="sectionIndex">
+                <h3>SELECIONE SEU PLAYER:</h3>
+                <input type="radio" name="opc1" id="playerOne"/>JOGADOR 1<br/>
+                <input type="radio" name="opc1" id="playerTwo"/>JOGADOR 2
+                
+                <h3>QUEM IRÁ COMEÇAR:</h3>
+                <input type="radio" name="opc2" id="playerOneStart"> JOGADOR 1<br/>
+                <input type="radio" name="opc2" id="playerTwoStart"> JOGADOR 2
+                
+                <h3>SELECIONE SEU ÍCONE:</h3>
+                <img id="iconeBola" src="img/bola.png" alt="Icone bola"/>
+                <img id="iconeXis" src="img/xis.png" alt="Icone Xis"/><br/>
+                
+                <p>Marque todas as opcoes !!!</p>
+                
+                <button id="btnStart">COMEÇAR</button>
+        </section>
+        <section id="sectionGame">
+            <article id="left">
+                <h2>JOGADOR 1</h2>
+                <img id="img1" class="" src="" alt="Icone do Jogador"><br/>
+                <p id="placar1">Placar: <span>0</span></p><br/>
+                <p id="vez1">SUA VEZ</p>
+            </article>
+
+            <article id="right">
+                <h2>JOGADOR 2</h2>
+                <img id="img2" class="" src="" alt="Icone do Jogador"/><br/>
+                <p id="placar2">Placar: <span>0</span></p><br/>
+                <p id="vez2">SUA VEZ</p>
+            </article>
+
+            <article id="game">
+                    <img id="velhaImg" src="img/velha.png" />
+                    <table id="velha">
+                        <tr>
+                            <td id="1"></td> <td id="2"></td> <td id="3"></td>
+                        </tr>
+                        <tr>
+                            <td id="4"></td> <td id="5"></td> <td id="6"></td>
+                        </tr>
+                        <tr>
+                            <td id="7"></td> <td id="8"></td> <td id="9"></td>
+                        </tr>
+                    </table>
+
+                    <button id="back">VOLTAR AO INICIO</button>
+                    <button id="resetScore">ZERAR O PLACAR</button>
+            </article>
+        </section>
+    </body>
+</html>
