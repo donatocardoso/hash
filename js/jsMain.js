@@ -116,12 +116,11 @@ $(document).ready(function(){
         $('#sectionGame').hide();
         $('img#img1').removeAttr('class');
         $('img#img2').removeAttr('class');
-        $('#placar1 span').text(0);
-        $('#placar2 span').text(0);
+        Reset();
     });
 
     /*Reinicia a pontuação - Reboot the punctuation*/
-    $('#resetScore').click(function(){
+    $('#resetScore').click(function Reset(){
         $('#placar1 span').text(0);
         $('#placar2 span').text(0);
     });
